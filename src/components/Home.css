@@ -1,0 +1,57 @@
+#home-container #home-header, #home-container #home-function {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+#home-container #home-header #title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#home-container #home-header #add-btn {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    border-radius: 1em;
+    border: 1px solid #0275d8;
+    padding: 1em 2em;
+    background-color: #0275d8;
+}
+
+#home-container .card {
+    margin: 1em;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    cursor: pointer;
+}
+
+#home-container #home-function input {
+    width: auto !important;
+}
+
+#home-container .dropdown-toggle::after {
+    margin-left: 0.5em !important;
+}
+
+#home-container .dropdown-menu a:nth-child(2) {
+    background-color: lemonchiffon;
+}
+
+#home-container .dropdown-menu a:nth-child(3) {
+    background-color: #9eeaf9;
+}
+
+#home-container .dropdown-menu a:nth-child(4) {
+    background-color: #a6e9d5;
+}
+
+#home-container #cards-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#home-container #cards-container > * {
+    flex: 1 1 10em;
+}

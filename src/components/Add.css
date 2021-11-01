@@ -1,0 +1,34 @@
+#Add .add-title {
+    text-align: center;
+}
+
+#Add #add-btn-navigate {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1em;
+}
+
+#Add #add-btn-navigate .back-btn {
+    margin-right: auto;
+    color: #fff;
+}
+
+#Add #add-btn-navigate a {
+    color: #fff;
+    text-decoration: none !important;
+
+}
+
+#Add .btn-delete {
+    float: right;
+    border-radius: 18em;
+    padding: 2.7em 1em;
+}
+
+#Add .form-group {
+    margin: 1em 0;
+}
+
+.react-datepicker__triangle {
+    transform: translate(233px, 0px) !important;
+}

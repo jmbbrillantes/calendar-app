@@ -4,9 +4,26 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import { createStore, applyMiddleware, compose } from 'redux';
+import { Provider } from 'react-redux';
+import { createBrowserHistory } from 'history'
+import thunk from 'redux-thunk';
+import unifiedReducers from './reducers';
+
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const store = createStore(unifiedReducers, composeEnhancers(
+  applyMiddleware(thunk)
+))
+
+// store.dispatch(fetchItems())
+
+export const history = createBrowserHistory({forceRefresh: true});
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
